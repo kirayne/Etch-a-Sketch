@@ -1,16 +1,23 @@
 function loader(){
     //virtual container to locally store my divs
     const container = document.createDocumentFragment();
-
-    //creating the 256 divs
-    for(let i=0; i<256; i++){
+ 
+    //getting the default value
+    var x = document.getElementById("side").value;
+    const cont = document.querySelector("#container");
+    cont.style.gridTemplateColumns=`repeat(${x}, 1fr`;
+    cont.style.gridTemplateRows=`repeat(${x}, 1fr`;
+    
+    //creating the (userInput) divs
+    for(let i=0; i<x*x; i++){
         const divs = document.createElement('div');
         divs.classList.add('squares');
         divs.addEventListener('mouseover', colorChange);
         divs.addEventListener('click', eraser);
         container.appendChild(divs);
     }
-    document.querySelector("#container").appendChild(container);
+
+    cont.replaceChildren(container);    
 
     document.querySelector("#input").addEventListener('click', selectSquares);
 
@@ -32,4 +39,6 @@ function loader(){
     }
 
 }
+
+
 

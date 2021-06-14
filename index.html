@@ -3,15 +3,24 @@
     <script src="functions.js" type="text/javascript"></script>  
     <link rel="stylesheet" href="styles.css">
   </head>
-<body onload="loader()">
-    <h1>
-   
+<body>
+    <h1 class="title">
+      Etch a Sketch
     </h1>
+  
     <div class="bigcont">
-        <input type="image" src="https://cdn.discordapp.com/attachments/739653078378217615/852661836565184512/pixilart-drawing_2.png" class="restart" id="input">
+      <div class="buttonContainer">
+      <input type="image" onclick="loader()" src="https://media.discordapp.net/attachments/677660386295545856/854092553616097320/pixilart-drawing.png">
+      <input type="range" id="side" name="side" min="1" max="64" value="16">
+      <label for="side">Grid Size</label>
+      <input type="image" src="https://cdn.discordapp.com/attachments/739653078378217615/852661836565184512/pixilart-drawing_2.png" class="restart" id="input">
+      
+      </div>
         <div id="container">
-            
+          <img src="https://cdn.discordapp.com/attachments/677660386295545856/853726841583960114/Blank.png" id="placeholder">
+       
         
         </div>
-    </div>  
+    </div>
+
   </body>

@@ -1,9 +1,14 @@
+@font-face {
+    font-family: "name";
+    src: url(name.ttf) format("truetype");
+}
+
 body{
-    background-color: gray;
+    font-family: name;
+    background-image: url(https://media.discordapp.net/attachments/739653078378217615/854104958067408906/white-damask-gray-grey-Floral-pattern-Background-Vinyl-cloth-High-quality-Computer-print-wall-photo-.png?width=982&height=702);
 }
 #container{
     display: grid;
-    grid-template-columns: repeat(16, 40px);
     justify-self: center;
     width: 640px;
     height: 640px;
@@ -12,12 +17,9 @@ body{
 }
 
 .squares{
-    width: 40px;
-    height: 40px;
     background-color: white;
     border: 1px solid rgb(47, 92, 92);
     box-sizing: border-box;
-    
 }
 
 
@@ -30,6 +32,27 @@ body{
     display:flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
+    flex-direction:row;
 
+}
+#placeholder{
+    width: 640px;
+    height: 640px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #009687;
+    margin-right: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.title{
+    display: flex;
+    
+    justify-content: center;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px #26545c;
 }
