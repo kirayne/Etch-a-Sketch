@@ -12,13 +12,13 @@ body{
     justify-self: center;
     width: 640px;
     height: 640px;
-    border: 10px solid rgb(47, 92, 92);
+    border: 10px solid rgb(59, 122, 122);
     
 }
 
 .squares{
     background-color: white;
-    border: 1px solid rgb(47, 92, 92);
+    border: 2px solid rgb(59, 122, 122);
     box-sizing: border-box;
 }
 
@@ -26,6 +26,15 @@ body{
 .restart{
     width: 100px;
     height: 100px;
+    margin-bottom: 4px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+.start{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 4px;
+    border: 1px solid rgb(0, 0, 0);
 
 }
 .bigcont{
@@ -44,7 +53,7 @@ body{
     justify-content:center;
     align-items: center;
     flex-direction:column;
-    background-color: #009687;
+    background-color: #248a7f;
     margin-right: 10px;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -55,4 +64,9 @@ body{
     justify-content: center;
     margin-bottom: 40px;
     text-shadow: 3px 3px #26545c;
+}
+
+.grid{
+    margin-bottom: 4px;
+    margin-top: 4px;
 }

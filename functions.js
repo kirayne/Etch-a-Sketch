@@ -23,7 +23,7 @@ function loader(){
 
     //changing color when mouse hovers
     function colorChange(e){
-        e.target.style.backgroundColor = '#586466';
+        e.target.style.backgroundColor = '#3b7a7a';
     }
     //set color to white again
     function selectSquares(){
